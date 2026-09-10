@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke@portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- boot screen-->
+     <div id="boot-screen">
+        <pre id="boot-text"></pre>
+     </div>
+
+    <!--Main Site-->
+    <div id="main-site" class="hidden">
+
+        <p>> use 'help' to see a list of commands</p>
+
+        <div id="terminal-input-line">
+            <span class="prompt">guest@luke:~$</span>
+            <input type="text" id="command-input" autocomplete="off" spellcheck="false">
+
+        </div>
+
+        <p id="command-feedback"></p>
+        
+        <section id="about" class="hidden">
+            <h2>whoami</h2>
+            <p>I am an ethical hacking student focussed on offensive security and CTFs.</p>
+        </section>
+
+        <section id="skills" class="hidden">
+            <h2>skills.txt</h2>
+            <ul>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Linux</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="hidden">
+            <h2>projects</h2>
+            <ul>
+                <li>
+                    <strong>project-one</strong> - Home lab Pentest
+                    <a href="#">[link]</a>
+                </li>
+                <li>
+                    <strong>project-two</strong> - Note app for windows
+                    <a href="#">[link]</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="hidden">
+            <h2>contact.txt</h2>
+            <ul>
+                <li>GitHub: <a href="https://github.com/luketcullum" target="_blank">github.com/luketcullum</a></li>
+                <li>Email: <a href="mailto:kuketcullum1@gmail.com">luketcullum1@gmail.com</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
