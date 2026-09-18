@@ -494,6 +494,22 @@ a {
     margin-top: 4px;
 }
 
+.not-found {
+  padding: var(--space-xl) 0;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-family: var(--font-sans);
+  font-size: var(--text-2xl);
+  margin: var(--space-sm) 0;
+}
+
+.not-found .download-btn {
+  display: inline-block;
+  margin-top: var(--space-md);
+}
+
 @media (max-width: 600px){
     body{
         font-size: 14px;
