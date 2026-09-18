@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <title>Luke@portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -16,53 +19,83 @@
     <!--Main Site-->
     <div id="main-site" class="hidden">
 
-        <p>> use 'help' to see a list of commands</p>
+        <header class="site-header">
+        <a href="index.html" class="logo">luke<span class="accent">@</span>portfolio</a>
+        <nav>
+            <ul class="nav-links">
+            <li><a href="index.html" class="active">home</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="writeups.html">writeups</a></li>
+            <li><a href="cv.html">cv</a></li>
+            <!-- <li><a href="about.html">about</a></li> -->
+            </ul>
+        </nav>
+        </header>
 
-        <div id="terminal-input-line">
-            <span class="prompt">guest@luke:~$</span>
-            <input type="text" id="command-input" autocomplete="off" spellcheck="false">
+        <main class="page">
 
-        </div>
+            <section class="hero">
+            <p class="eyebrow">$ whoami</p>
+            <h1>Luke <span class="accent">/</span> Offensive Security Student</h1>
+            <p class="lede">
+                I break systems to understand how to defend them. Currently working
+                toward OSCP, spending most of my free time in CTFs and home lab builds.
+            </p>
+            </section>
 
-        <p id="command-feedback"></p>
-        
-        <section id="about" class="hidden">
-            <h2>whoami</h2>
-            <p>I am an ethical hacking student focussed on offensive security and CTFs.</p>
-        </section>
+            <section class="shell-section">
+            <div id="terminal-input-line">
+                <span class="prompt">guest@luke:~$</span>
+                <input type="text" id="command-input" autocomplete="off" spellcheck="false">
+            </div>
+            <p id="command-feedback"></p>
 
-        <section id="skills" class="hidden">
-            <h2>skills.txt</h2>
-            <ul>
-                <li>C++</li>
+            <div id="about" class="hidden shell-output">
+                <p>Ethical hacking student focused on offensive security and CTFs.</p>
+            </div>
+            <div id="skills" class="hidden shell-output">
+                <ul>
+                <li>Nmap</li>
+                <li>Burp Suite</li>
                 <li>Python</li>
                 <li>Linux</li>
-            </ul>
-        </section>
+                <li>Metasploit</li>
+                </ul>
+            </div>
+            <div id="contact" class="hidden shell-output">
+                <ul>
+                <li>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></li>
+                <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+                </ul>
+            </div>
+            </section>
 
-        <section id="projects" class="hidden">
-            <h2>projects</h2>
-            <ul>
-                <li>
-                    <strong>project-one</strong> - Home lab Pentest
-                    <a href="#">[link]</a>
-                </li>
-                <li>
-                    <strong>project-two</strong> - Note app for windows
-                    <a href="#">[link]</a>
-                </li>
-            </ul>
-        </section>
+            <section class="featured">
+            <div class="section-heading">
+                <h2>Featured Projects</h2>
+                <a href="projects.html" class="see-all">see all &rarr;</a>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                <h3>Project One</h3>
+                <p>Short description of what it does and why it's interesting.</p>
+                <a href="https://github.com/yourusername/project-one">View on GitHub &rarr;</a>
+                </article>
+                <article class="card">
+                <h3>Project Two</h3>
+                <p>Short description of what it does and why it's interesting.</p>
+                <a href="https://github.com/yourusername/project-two">View on GitHub &rarr;</a>
+                </article>
+            </div>
+            </section>
 
-        <section id="contact" class="hidden">
-            <h2>contact.txt</h2>
-            <ul>
-                <li>GitHub: <a href="https://github.com/luketcullum" target="_blank">github.com/luketcullum</a></li>
-                <li>Email: <a href="mailto:kuketcullum1@gmail.com">luketcullum1@gmail.com</a></li>
-            </ul>
-        </section>
+        </main>
     </div>
 
-    <script src="script.js"></script>
+    <footer class="site-footer">
+        <p>&copy; 2026 Luke &mdash; built from scratch, no frameworks</p>
+    </footer>
+    <script src="js/boot.js"></script>
+    <script src="js/shell.js"></script>
 </body>
 </html>

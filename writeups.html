@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luke | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <a href="index.html" class="logo">luke<span class="accent">@</span>portfolio</a>
+    <nav>
+        <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="writeups.html" class="active">writeups</a></li>
+        <li><a href="cv.html">cv</a></li>
+        <!-- <li><a href="about.html">about</a></li> -->
+        </ul>
+    </nav>
+    </header>
+  <main class="page">
+    <section class="page-intro">
+      <p class="eyebrow"> $cat writeups/index.txt</p>
+      <h1>Writeups</h1>
+      <p class="lede"> CTF writeup solution as well as writeups for my created CTFs. </p>
+    </section>
+
+    <ul class="writeup-list">
+      
+      <li class="writeup-row">
+        <a href="writeups/box-name.html">
+          <span class="writeup-title"> HTB: Box Name</span>
+          <span class="writeup-tag"> hosted</span>
+        </a>
+        <span class="writeup-meta">Linux &middot; Easy &middot; Sep 2026</span>
+      </li>
+
+      <li class="writeup-row">
+        <a href="https://tryhackme.com/room/example" target="_blank" rel="noopener">
+          <span class="writeup-title">THM: Some Room</span>
+          <span class="writeup-tag external"> external &rarr;</span>
+        </a>
+        <span class="writeup-meta">Web &middot; Medium &middot; Aug 2026</span>
+      </li>
+    </ul>
+  </main>
+
+
+    <footer class="site-footer">
+    <p>&copy; 2026 Luke &mdash; built from scratch, no frameworks</p>
+    </footer>
+  <script src="js/boot.js"></script>
+  <script src="js/shell.js"></script>
+</body>
+</html>
